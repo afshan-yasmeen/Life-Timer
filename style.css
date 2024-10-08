@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: url("./images/background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px; /* Add padding for smaller devices */
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.setting {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    height: 20%;
+    text-align: right;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fa {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.dob {
+    text-align: right;
+}
+
+.dob-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.dob-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.dob-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dob-btn:hover {
+    background-color: #0056b3;
+}
+
+.hide {
+    display: none;
+}
+
+.hide1 {
+    display: block;
+}
+
+.lifeTimer {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.lifeTimer div {
+    text-align: center;
+    width: 100px;
+}
+
+.lifeTimer h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .lifeTimer {
+        gap: 20px;
+    }
+
+    .lifeTimer h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    #EnterDate , #lifeJourney{
+        padding: 50px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .lifeTimer div {
+        width: 80px;
+    }
+
+    .fa {
+        font-size: 1.5rem;
+    }
+
+    .dob-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .dob-btn {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .lifeTimer h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container h1 {
+        font-size: 1.4rem;
+      
+    }
+    #EnterDate , #lifeJourney{
+        padding: 50px;
+    }
+
+    .lifeTimer {
+        flex-direction: wrap;
+        align-items: center;
+    }
+/* 
+    .lifeTimer div {
+        width: 100%;
+    } */
+
+    .lifeTimer h1 {
+        font-size: 0.9rem;
+    }
+
+    .fa {
+        font-size: 1.3rem;
+    }
+
+    .dob-input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .dob-btn {
+        padding: 8px ;
+        font-size: 12px;
+    }
+}

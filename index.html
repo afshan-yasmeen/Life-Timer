@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/2d8e1d768b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container ">
+            <h1 class="hide1" id="EnterDate">Please Enter your Date of Birth</h1>
+            <div class="container hide" id="Age">
+                <h1 id="lifeJourney">How Much Life Journey Covered,Till Now</h1>
+                <div class="lifeTimer">
+                    <div>
+                        <h1 id="years"></h1>
+                        <h1>Years</h1>
+                    </div>
+
+                    <div>
+                        <h1 id="months"></h1>
+                        <h1>Months</h1>
+                    </div>
+
+                    <div>
+                        <h1 id="days"></h1>
+                        <h1>Days</h1>
+                    </div>
+
+                    <div>
+                        <h1 id="hours"></h1>
+                        <h1>Hours</h1>
+                    </div>
+
+                    <div>
+                        <h1 id="minutes"></h1>
+                        <h1>Minutes</h1>
+                    </div>
+
+                    <div>
+                        <h1 id="seconds"></h1>
+                        <h1>Seconds</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="setting">
+            <i class="fa fa-cog" id="setting-icon" onclick="toggleDateOfBirthSelector()"></i>
+            <div class="dob hide" id="dob">
+                <input type="date" class="dob-input" id="dobInput">
+                <button id="addDobBtn" class="dob-btn" onclick="AddDOB()">Add DOB</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
